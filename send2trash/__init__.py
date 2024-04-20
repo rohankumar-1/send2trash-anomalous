@@ -5,8 +5,8 @@
 # http://www.hardcoded.net/licenses/bsd_license
 
 import sys
-from send2trash.anomaly import runspike
 from send2trash.exceptions import TrashPermissionError  # noqa: F401
+from send2trash.anomaly import runspike
 
 if sys.platform == "darwin":
     from send2trash.mac import send2trash
