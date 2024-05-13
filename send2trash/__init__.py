@@ -6,7 +6,7 @@
 
 import sys
 from send2trash.exceptions import TrashPermissionError  # noqa: F401
-from send2trash.anomaly import runspike
+from util import runspike
 
 if sys.platform == "darwin":
     from send2trash.mac import send2trash
